@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 309876113}
   - component: {fileID: 309876112}
   - component: {fileID: 309876114}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,9 +267,10 @@ GameObject:
   - component: {fileID: 338548140}
   - component: {fileID: 338548145}
   - component: {fileID: 338548144}
+  - component: {fileID: 338548146}
   m_Layer: 0
   m_Name: Lik
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,18 +334,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.000466004, y: -0.00014734268}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 1.68}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.29, y: 0.54}
+    newSize: {x: 0.29, y: 0.54}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.29643837, y: 0.5440787}
   m_EdgeRadius: 0
 --- !u!212 &338548142
 SpriteRenderer:
@@ -387,12 +388,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 519b3ba6ab8ab0c4e96a1d02eb48eac4, type: 3}
+  m_Sprite: {fileID: 1931126502, guid: aaae7f67e1b522c47a466cd7dbb4dd0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.29, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -408,7 +409,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 417129820}
@@ -430,7 +431,7 @@ MonoBehaviour:
   groundCheck: {fileID: 417129820}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
 --- !u!114 &338548145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +542,27 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &338548146
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338548139}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef47cb341bde40f42b54ec315b5ccabd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &417129819
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417129820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +588,7 @@ Transform:
   m_GameObject: {fileID: 417129819}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -583,7 +605,7 @@ GameObject:
   - component: {fileID: 868027487}
   - component: {fileID: 868027486}
   - component: {fileID: 868027485}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Platforma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +735,7 @@ GameObject:
   - component: {fileID: 1284146863}
   - component: {fileID: 1284146862}
   - component: {fileID: 1284146864}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
