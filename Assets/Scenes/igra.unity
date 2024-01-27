@@ -431,7 +431,7 @@ MonoBehaviour:
   groundCheck: {fileID: 417129820}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &338548145
 MonoBehaviour:
   m_ObjectHideFlags: 0
