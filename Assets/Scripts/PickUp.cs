@@ -2,11 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// public class Player
-// {
-//   public int health;
-// }
-
 public class PickUp : MonoBehaviour
 {
   
@@ -24,7 +19,6 @@ public class PickUp : MonoBehaviour
   {
     if (collision.tag == "Player")
     {
-      // igrac.poeni += 10;
       sm.score += 1f;
       Destroy(gameObject);
     }
