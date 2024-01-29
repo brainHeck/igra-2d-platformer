@@ -325,7 +325,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 338548139}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9b86bc0902ba8ad4ab002b13163cea52, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1738,6 +1738,7 @@ GameObject:
   - component: {fileID: 566799440}
   - component: {fileID: 566799439}
   - component: {fileID: 566799438}
+  - component: {fileID: 566799441}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1819,6 +1820,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &566799441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566799437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07d45e0524bb5844822eea289785457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowSpeed: 2
+  target: {fileID: 338548143}
 --- !u!1 &590137471
 GameObject:
   m_ObjectHideFlags: 0
