@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-  
-  // public GameObject gm; // pasujes u unity
   private ScoreManager sm;
+  private PlayerScript player;
 
   private void Start()
   {
     // sm = gm.GetComponent<ScoreManager>();
     sm = GameObject.Find("Canvas").GetComponent<ScoreManager>();
+    player = GameObject.Find("Lik").GetComponent<PlayerScript>();
   }
 
   // Kada objekat sa tagom "Player" se sudari sa kristalom, obrisi ga
@@ -20,6 +20,8 @@ public class PickUp : MonoBehaviour
     if (collision.tag == "Player")
     {
       sm.score += 1f;
+      player.poeni += 1;
+      Debug.Log(player.poeni);
       Destroy(gameObject);
     }
   }
