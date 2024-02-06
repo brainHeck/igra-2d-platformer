@@ -12728,7 +12728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 482825029}
-  potrebniPoeni: 5
+  potrebniPoeni: 8
 --- !u!483693784 &1683749438
 TilemapRenderer:
   m_ObjectHideFlags: 0
