@@ -11,7 +11,8 @@ public class SpikeDie : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            SceneManager.LoadScene("level1");
+            //SceneManager.LoadScene("level1");
+            SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex ) ;
         }
     }
 }
