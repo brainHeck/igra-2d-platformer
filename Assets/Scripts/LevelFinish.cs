@@ -13,7 +13,8 @@ public class LevelFinish : MonoBehaviour
         if (collision.tag == "Player" && player.poeni == potrebniPoeni)
         {
             Debug.Log("pobeda!");
-            SceneManager.LoadScene("level2");
+            //SceneManager.LoadScene("level2");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
